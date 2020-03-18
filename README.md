@@ -30,13 +30,13 @@ See https://github.com/erachain/sidechains
 
 ### Автоматическое создание кошелька
 Если задать параметр при старте `-seed` то если в папке нет папки с секртеными ключами - walletKeys то программа сама создаст новый кошелек, счета внем и запаролирует заданным паролем. Пример команды:  
-'''
-    java -jar erachain.jar -pass=PASSWORD -seed=N:SEED:PASSWORD
- '''
+
+    java -jar erachain.jar -pass=PASSWORD -seed=5:SEED:PASSWORD
+
 Где N - число счетов, котрое нужно создать, SEED - мастер ключ, PASSWORD каоторым надо запароллировать кошелек. Если он совпадает со значением в -pass то сразу начнется форжинг  
 Вдобавок если ваша ноде не будет раздавать API то задайте ключ `-nodatawallet` - то усорит работу ноды. А если нода не будет раздавать RPC, то можно отказаться от непротокольных индексов задав параметр `-opi` - это ускорит работу ноды в 4-ре раза. Пример:  
 
-    java -jar erachain.jar -pass=123456789 -seed=5:SEED:PASSWORD -opi - nodatawallet
+    java -jar erachain.jar -pass=PASSWORD -seed=5:SEED:PASSWORD -opi - nodatawallet
 
 
 ### IP узлов сети (peers)
