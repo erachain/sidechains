@@ -36,7 +36,7 @@ See https://github.com/erachain/sidechains
 Где N - число счетов, которое нужно создать, SEED - мастер ключ, PASSWORD которым надо запароллировать кошелек. Если он совпадает со значением в `-pass`, то сразу начнется форжинг.  
 Вдобавок если ваша нода не будет раздавать API, то задайте ключ `-nodatawallet` - то ускорит работу ноды. А если нода не будет раздавать RPC, то можно отказаться от непротокольных индексов задав параметр `-opi` - это ускорит работу ноды в 4-ре раза. Пример:  
 
-    java -jar erachain.jar -pass=PASSWORD -seed=5:SEED:PASSWORD -opi - nodatawallet
+    java -jar erachain.jar -pass=PASSWORD -seed=5:SEED:PASSWORD -opi -nodatawallet
 
 
 ### IP узлов сети (peers)
