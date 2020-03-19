@@ -1,3 +1,4 @@
+
 # Sidechains
 How make Your own sidechain with KYC, exchange, assets, polls etc.
 
@@ -31,12 +32,12 @@ See https://github.com/erachain/sidechains
 ### Автоматическое создание кошелька
 Если задать параметр при старте `-seed`, то если в папке нет папки с секретеными ключами - walletKeys, то программа сама создаст новый кошелек, счета в нем и запаролирует заданным паролем. Пример команды:  
 
-    java -jar erachain.jar -pass=PASSWORD -seed=5:SEED:PASSWORD
+    java -jar erachain.jar -pass=PASSWORD -seed=N:SEED:PASSWORD
 
-Где N - число счетов, которое нужно создать, SEED - мастер ключ, PASSWORD которым надо запароллировать кошелек. Если он совпадает со значением в `-pass`, то сразу начнется форжинг.  
-Вдобавок если ваша нода не будет раздавать API, то задайте ключ `-nodatawallet` - то ускорит работу ноды. А если нода не будет раздавать RPC, то можно отказаться от непротокольных индексов задав параметр `-opi` - это ускорит работу ноды в 4-ре раза. Пример:  
+Где N - число счетов, которое нужно создать, SEED - мастер ключ, PASSWORD - пароль, которым надо запароллировать кошелек. Если он совпадает со значением в `-pass`, то сразу начнется форжинг.  
+Вдобавок если ваша нода не будет раздавать RPC, то задайте ключ `-nodatawallet` - это ускорит работу ноды. А если нода не будет раздавать API и blockexplorer (web-server выключен), то можно отказаться от непротокольных индексов задав параметр `-opi` (Only Protocol Indexing) - это ускорит работу ноды в 4-ре раза. Пример:  
 
-    java -jar erachain.jar -pass=PASSWORD -seed=5:SEED:PASSWORD -opi -nodatawallet
+    java -jar erachain.jar -pass=123456789 -seed=5:R2we%ga...:123456789 -opi -nodatawallet
 
 
 ### IP узлов сети (peers)
