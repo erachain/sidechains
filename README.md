@@ -1,5 +1,5 @@
 
-# You own blockchain by Erachain technology - Sidechain
+# Blockchain by Erachain technology - Sidechain
 How make Your own blockchain with KYC, exchange, assets, polls etc.
 
 For start Your own blockchain put genesis.json file into application folder. See examples in z_genesis folder.
