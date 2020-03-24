@@ -1,8 +1,8 @@
 
-# Sidechains
-How make Your own sidechain with KYC, exchange, assets, polls etc.
+# You own blockchain by Erachain technology - Sidechain
+How make Your own blockchain with KYC, exchange, assets, polls etc.
 
-For start Your own sidechain put genesis.json file into application folder. See examples in z_genesis folder.
+For start Your own blockchain put genesis.json file into application folder. See examples in z_genesis folder.
 
 See https://github.com/erachain/sidechains
 
