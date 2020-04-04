@@ -6,6 +6,11 @@ For start Your own blockchain put genesis.json file into application folder. See
 
 See https://github.com/erachain/sidechains
 
+### Общее начало - GENESIS блок
+Для объединения в одну общую блокчейн-среду необходимо всем задать одинаковый начальный блок - генесиз-блок. Для его создания используется особый файл настроек - `genesis.json`, пример которого можно найти в папке: `z_GENESIS_EXAMPLES`
+
+Каждая нода должна иметь од
+
 В файле genesis.json необходимо указать данные для цепочки:
 + имя цепочки  
 + время первого блока в формате TIMESTAMP в миллисекундах (GMT). Его можно взять   отсюда [https://www.epochconverter.com/](https://www.epochconverter.com/)
