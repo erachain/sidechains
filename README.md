@@ -2,16 +2,16 @@
 # Blockchain by Erachain technology - Sidechain
 How make Your own blockchain with KYC, exchange, assets, polls etc.
 
-For start Your own blockchain put genesis.json file into application folder. See examples in z_genesis folder.
+For start Your own blockchain put sideGENESIS.json file into application folder. See examples in z_genesis folder.
 
 See https://github.com/erachain/sidechains
 
 ### Общее начало - GENESIS блок
-Для объединения в одну общую блокчейн-среду необходимо всем задать одинаковый начальный блок - генесиз-блок. Для его создания используется особый файл настроек - `genesis.json`, пример которого можно найти в папке: `z_GENESIS_EXAMPLES`
+Для объединения в одну общую блокчейн-среду необходимо всем задать одинаковый начальный блок - генесиз-блок. Для его создания используется особый файл настроек - `sideGENESIS.json`, пример которого можно найти в папке: `z_GENESIS_EXAMPLES`
 
 **!!! ВНИМАНИЕ** - этот файл нужно беречь, так как его утрата приведет к тому что ни одна нода не сможет присоединиться к вашей цепочке. Самое лучшее - это сохранить его в головной цепочке Eracahin.
 
-В файле `genesis.json` необходимо указать данные для вашей цепочки:
+В файле `sideGENESIS.json` необходимо указать данные для вашей цепочки:
 + имя цепочки  
 + время первого блока в формате TIMESTAMP в миллисекундах (GMT). Его можно взять   отсюда [https://www.epochconverter.com/](https://www.epochconverter.com/)
 + список владельцев пакетов форжинга. Причем у каждого держателя можно задать
@@ -33,6 +33,7 @@ See https://github.com/erachain/sidechains
 ## Общий протокол сети
 Все узлы в сети должны работать по одному протоколу. Иначе будет создано ответвление - хардфорк. Параметры протокола хранятся в файле `sidePROTOCOL.json`.  
 Пример в файле `sidePROTOCOL_example.json`в папке `z_GENESIS_EXAMPLES`.
+
 
 ### Включение форжинга
 Для автоматического включения форжинга при старте ноды необходимо указать пароль доступа к кошельку:  
