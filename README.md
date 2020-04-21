@@ -3,7 +3,7 @@
 # Blockchain by Erachain technology - Sidechain
 How make Your own blockchain with KYC, exchange, assets, polls etc.
 
-For start Your own blockchain put sideGENESIS.json file into application folder. See examples in z_genesis folder.
+For start Your own blockchain put `sideGENESIS.json` file into application folder. See examples in `z_GENESIS_EXAMPLES`folder.
 
 See https://github.com/erachain/sidechains
 
@@ -35,6 +35,7 @@ See https://github.com/erachain/sidechains
 Помните что пакеты форжинга начинают форжить не сразу, поэтому за раз передавать более чем 10% от всего объема ERA не рекомендуется так как вся цепочка может остановиться.
 
 ## Общая сеть узлов - пиры
+Блокчейн среда будет генерировать блоки только если в сети есть хотя бы 2 узла (ноды), которые друг друга увидят и законнектится друг с другом и имеют одинаковый генесиз-блок.  
 Для того чтобы ноды (узлы, пиры) увидели друг друга, необходимо задать хотя бы одни общий IP узла, через который ноды будут получать данные о других нодах. Желательно указать несколько начальных нод вашей сети. Их список необходимо задать в файле `peers-side.json`. Пример можно посмотреть в других подобных файлах. Раздайте этот файл на другие ноды вашей сети.  
 Не забудьте на локальных машинах узлов сети открыть порт сети **9056** для внешних вызовов. Для справки - порт 9057 используется для доступа к API и blockexplorer. А порт 9058 дает доступ к RPC.
 
