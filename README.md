@@ -8,6 +8,10 @@ For start Your own blockchain put `sideGENESIS.json` file into application folde
 
 See https://github.com/erachain/sidechains
 
+## Уроки
++ как быстро создать свой блокчейн: https://www.youtube.com/watch?v=4OIGrRC-uJU&list=PL9gtTYrhfx8Ug80EHNgDO7bgh3pzs8k_5&index=7&t=0s  
++ как запустить блокчейн-ноду на виртуальной машине (в облаке): https://www.youtube.com/watch?v=N-UXedtPCEE&list=PL9gtTYrhfx8Ug80EHNgDO7bgh3pzs8k_5
+
 > Файлы с расширением .json содержат в себе данные по формату `JSON`.
 
 ### Общее начало - GENESIS блок
